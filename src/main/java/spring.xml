@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="customer1" class="com.ssi.Customer">
+	<property name="code" value="1111"/>
+	<property name="cname" value="ABCD"/>
+	<property name="email" value="abcd@gmail.com"/>
+	<property name="addresses">
+		<list>
+			<value>22, Palasia, Indore</value>
+			<value>33, MGRoad, Bhopal</value>
+			<value>45, VijayNagar, Delhi</value>
+		</list>
+	</property>
+	<property name="mobiles">
+		<set>
+			<value>9826012345</value>
+			<value>9425034567</value>
+			<value>9998822334</value>
+		</set>
+	</property>
+	
+	<property name="family">
+		<map>
+			<entry key="father" value="XYZ"/>
+			<entry key="mother" value="PQR"/>
+			<entry key="brother" value="STU"/>
+		</map>
+	</property>
+	<property name="phones">
+		<props>
+			<prop key="office">0731-5566778</prop>
+			<prop key="resi">0731-4848689</prop>
+			<prop key="fax">0731-7878990</prop>	
+		</props>
+	</property>
+	
+	
+	
+	
+	
+	
+</bean>
+
+</beans>
