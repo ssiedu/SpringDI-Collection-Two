@@ -9,10 +9,8 @@ public class Customer {
 	private int code;
 	private String cname;
 	private String email;
-	private List<String> addresses;
-	private Set<String> mobiles;
-	private Map<String,String> family;
-	private Properties phones;
+	private List<Address> addresses;
+	
 	
 	public void showInfo(){
 		System.out.println("Code    : "+code);
@@ -20,20 +18,6 @@ public class Customer {
 		System.out.println("Email   : "+email);
 		System.out.println("Addresses : ");
 		System.out.println(addresses);
-		System.out.println("Mobiles : ");
-		System.out.println(mobiles);
-		System.out.println("Landline Phones : ");
-		System.out.println(phones);
-		/*for(String address:addresses){
-			System.out.println(address);
-		}
-		System.out.println("Mobiles : ");
-		for(String mobile:mobiles){
-			System.out.println(mobile);
-		}*/
-		System.out.println("Family Members: ");
-		System.out.println(family);
-		System.out.println("___________________________________________");
 	}
 	public int getCode() {
 		return code;
@@ -53,29 +37,11 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public List<String> getAddresses() {
+	public List<Address> getAddresses() {
 		return addresses;
 	}
-	public void setAddresses(List<String> addresses) {
+	public void setAddresses(List<Address> addresses) {
 		this.addresses = addresses;
-	}
-	public Set<String> getMobiles() {
-		return mobiles;
-	}
-	public void setMobiles(Set<String> mobiles) {
-		this.mobiles = mobiles;
-	}
-	public Map<String, String> getFamily() {
-		return family;
-	}
-	public void setFamily(Map<String, String> family) {
-		this.family = family;
-	}
-	public Properties getPhones() {
-		return phones;
-	}
-	public void setPhones(Properties phones) {
-		this.phones = phones;
 	}
 	
 	
